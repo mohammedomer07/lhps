@@ -10,25 +10,70 @@
 
 })();
 </script>
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://leadinghighschool.com/",
-  "name": "Dr. Muhammad Ahmed",
-  "alternateName": "Dr. Ahmed",
-  "jobTitle": [
-    "Chairman", 
-    "Managing Director", 
-    "Doctor", 
-    "Advocate"
-  ],
-  "url": "https://leadinghighschool.com",
-  "sameAs": [
-    "https://leadinghighschool.com",
-    "https://instagram.com/leadinghighschool/"
-  ],
-
+  "@graph": [
+    {
+      "@type": "School",
+      "@id": "https://leadinghighschool.com/#school",
+      "name": "Leading High School",
+      "url": "https://leadinghighschool.com/",
+      "description": "We strive to provide excellent education. Our dedicated teachers and enriching programs help students grow in knowledge and character. We believe in the power of education to transform lives and honor the values of our faith.",
+      "sameAs": [
+        "https://instagram.com/leadinghighschool/"
+      ],
+      "founder": {
+        "@id": "https://leadinghighschool.com/#chairman"
+      },
+      "employee": {
+        "@id": "https://leadinghighschool.com/#chairman"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://leadinghighschool.com/#website",
+      "url": "https://leadinghighschool.com/",
+      "name": "Leading High School",
+      "description": "Official website of Leading High School.",
+      "publisher": {
+        "@id": "https://leadinghighschool.com/#school"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://leadinghighschool.com/#webpage",
+      "url": "https://leadinghighschool.com/",
+      "name": "Leading High School | Official Website",
+      "description": "We strive to provide excellent education. Our dedicated teachers and enriching programs help students grow in knowledge and character. We believe in the power of education to transform lives and honor the values of our faith.",
+      "isPartOf": {
+        "@id": "https://leadinghighschool.com/#website"
+      },
+      "about": {
+        "@id": "https://leadinghighschool.com/#school"
+      },
+      "publisher": {
+        "@id": "https://leadinghighschool.com/#school"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://leadinghighschool.com/#chairman",
+      "name": "Dr. Muhammad Ahmed",
+      "alternateName": "Dr. Ahmed",
+      "jobTitle": [
+        "Chairman",
+        "Managing Director",
+        "Doctor",
+        "Advocate"
+      ],
+      "worksFor": {
+        "@id": "https://leadinghighschool.com/#school"
+      }
+    }
+  ]
 }
 </script>
 	<meta name="robots" content="max-image-preview:large">
